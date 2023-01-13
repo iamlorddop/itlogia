@@ -40,13 +40,13 @@
                             <p class="text">В нашем клубе имеется солидная коллекция спортивных <br> автомобилей — от достаточно распространенных серийных
                                 <br> машин до настоящего гоночного эксклюзива. Воспользуйтесь <br> уникальной возможностью побывать за рулем настоящей
                                 <br>легенды и узнать, на что она способна за пределами гоночной <br> трассы!</p>
-                            <a href="#" class="btn btn__header">Посмотреть автомобили</a>
+                            <button class="btn btn__header" id="main-action">Посмотреть автомобили</button>
                         </div>
                         <img src="./img/background.png" alt="background" class="bg__one">
                     </div>
                 </section>
 
-                <section class="sec__two">
+                <section class="sec__two" id="cars">
                     <div class="container">
                         <h2 class="subtitle">Наш автопарк</h2>
                         <div class="cars">
@@ -251,23 +251,23 @@
                     </div>
                 </section>
 
-                <section class="sec__three">
+                <section class="sec__three" id="sec__three">
                     <div class="sec__form">
                         <div class="container">
                             <h2 class="subtitle">Узнать цену и забронировать</h2>
                             <br>
                             <p class="text">Заполните данные, и мы перезвоним вам для уточнения всех деталей бронирования</p>
-                            <form action="" id="form" class="form">
+                            <form action="#" id="form" class="form">
                                 <div class="input__box">
-                                    <input class="input" type="text" placeholder="Ваше имя">
+                                    <input class="input" id="name" type="text" placeholder="Ваше имя">
                                 </div>
                                 <div class="input__box">
-                                    <input class="input" type="tel" placeholder="Ваш телефон">
+                                    <input class="input" id="tel" type="tel" placeholder="Ваш телефон">
                                 </div>
                                 <div class="input__box">
-                                    <input class="input" type="text" placeholder="Автомобиль, который вас интересует">
+                                    <input class="input" id="car" type="text" placeholder="Автомобиль, который вас интересует">
                                 </div>
-                                <button type="submit" class="btn form__btn">Узнать цену</button>
+                                <button type="submit" class="btn form__btn" id="form__btn">Узнать цену</button>
                             </form>
                             <img src="./img/rolls.png" alt="background" class="bg__two">
                         </div>
@@ -290,5 +290,6 @@
             </div>
         </footer>
     </div>
+    <script src="./js/main.js"></script>
 </body>
 </html>
