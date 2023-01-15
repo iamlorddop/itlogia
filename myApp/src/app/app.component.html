@@ -4,7 +4,7 @@
       <div class="container">
         <div class="flex">
           <div class="flex-item">
-            <img src="./assets/img/logo.png" alt="logo" class="logo__img">
+            <img src="assets/img/logo.png" alt="logo" class="logo__img">
           </div>
 
           <div class="flex-item">
@@ -29,7 +29,7 @@
               <br>легенды и узнать, на что она способна за пределами гоночной <br> трассы!</p>
             <button class="btn btn__header" id="main-action" (click)="goScroll(cars)">Посмотреть автомобили</button>
           </div>
-          <img src="./assets/img/background.png" alt="background" class="bg__one" [ngStyle]="bgPos">
+          <img src="assets/img/background.png" alt="background" class="bg__one" [ngStyle]="bgPos">
         </div>
       </section>
 
@@ -38,21 +38,21 @@
           <h2 class="subtitle">Наш автопарк</h2>
           <div class="cars">
             <div class="car__card" *ngFor="let car of carsData">
-              <img src="./assets/img/{{car.image}}" alt="Lamborghini Huracan Spyder" class="car__img">
+              <img src="{{car.image}}" alt="Lamborghini Huracan Spyder" class="car__img">
               <h3 class="car__card-name">{{car.name}}</h3>
               <div class="car__card-props">
                 <div class="props__case">
-                  <img src="./assets/img/transmission.png" alt="transmission" class="props__image">
+                  <img src="assets/img/transmission.png" alt="transmission" class="props__image">
                   <p class="props__text"><b>Коробка</b><br>{{car.transmission}}</p>
                 </div>
 
                 <div class="props__case">
-                  <img src="./assets/img/Group.png" alt="img" class="props__image">
+                  <img src="assets/img/Group.png" alt="img" class="props__image">
                   <p class="props__text"><b>Двигатель</b> <br>{{car.engine}}</p>
                 </div>
 
                 <div class="props__case">
-                  <img src="./assets/img/year.png" alt="year" class="props__image">
+                  <img src="assets/img/year.png" alt="year" class="props__image">
                   <p class="props__text"><b>Год выпуска</b><br>{{car.year}}</p>
                 </div>
               </div>
@@ -80,7 +80,7 @@
               </div>
               <button type="submit" class="btn form__btn" id="form__btn" (click)="onSubmit()" [disabled]="!priceForm.valid">Узнать цену</button>
             </form>
-            <img src="./assets/img/rolls.png" alt="background" class="bg__two" [ngStyle]="trans">
+            <img src="assets/img/rolls.png" alt="background" class="bg__two" [ngStyle]="trans">
           </div>
         </div>
       </section>
@@ -91,7 +91,7 @@
     <div class="container">
       <div class="flex">
         <div class="flex-item">
-          <img src="./assets/img/logo.png" alt="logo" class="logo__img">
+          <img src="assets/img/logo.png" alt="logo" class="logo__img">
         </div>
 
         <div class="flex-item">
